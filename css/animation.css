@@ -1,53 +1,142 @@
 .scene {
     background:#84dbd7;
-  position:absolute;
-  top:0;
-  left:0;
-  overflow:hidden;
-  right:0;
-  border-bottom:1px solid #342a2a;
-  height:200px;
+    position:absolute;
+    top:0;
+    left:0;
+    overflow:hidden;
+    right:0;
+    border-bottom:0px solid #342a2a;
+    height:200px;
 }
-.scene > div {
-  position:absolute;
-  bottom:0;
+#ground, #trees, #treess, #buildings, #buildingss, #sky, #sun_yellow, #sun_red, #night, #stars, #sstar {
+    position:absolute;
+    bottom:0;
 }
-.ground {
-  width:100%;
-  height:30px;
-  background:#1d1818;
-  z-index:999;
+#clouds, #sky, #night, #stars{
+    position:absolute;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    width:100%;
 }
-.scene > div.clouds {
-  width:895px;
-  left:50%;
-  margin-left:-447px;
-  height:127px;
-  bottom:30px;
-  background:url(../images/clouds.png) no-repeat center;
+#ground{
+    position:absolute;
+    width:964px;
+    height:35px;
+    z-index:15;
+    left:50%;
+    bottom:17px;
+    margin-left:-482px;
+    background:url(../images/grass.png) no-repeat center;
 }
-.scene div.trees {
-  width:908px;
-  height:87px;
-  background:url(../images/trees.png) no-repeat center;
-  z-index:1;
-  left:50%;
-  bottom:20px;
-  margin-left:-454px;
+#groundd{
+    position:absolute;
+    width:964px;
+    height:35px;
+    z-index:14;
+    left:50%;
+    bottom:17px;
+    margin-left:-482px;
+    background:url(../images/grass.png) no-repeat center;
+    -webkit-filter: brightness(50%);
 }
-.scene div.grass {
-  width:964px;
-  height:35px;
-  z-index:2;
-  left:50%;
-  bottom:17px;
-  margin-left:-482px;
-  background:url(../images/grass.png) no-repeat center;
+#clouds {    
+    background:transparent url(../images/clouds.png) repeat-x top left;
+    z-index: 3;
+    height: 130%;
+    width: 130%;
 }
-.buildings {  
-  width:763px;
-  height:173px;
-  left:50%;
-  margin-left:-400px;
-  background:url(../images/buildings.png) no-repeat center;
+#trees {
+    width:908px;
+    height:87px;
+    background:url(../images/trees.png) no-repeat center;
+    z-index:13;
+    left:50%;
+    bottom:20px;
+    margin-left:-454px;
+    opacity: 1;
+}
+#treess {
+    width:908px;
+    height:87px;
+    background:url(../images/trees.png) no-repeat center;
+    z-index:12;
+    left:50%;
+    bottom:20px;
+    margin-left:-454px;
+    -webkit-filter: brightness(50%);
+}
+#buildings {  
+    width:763px;
+    height:173px;
+    left:50%;
+    margin-left:-400px;
+    background:url(../images/buildings.png) no-repeat center;
+    z-index: 11;
  }
+#buildingss {  
+    width:763px;
+    height:173px;
+    left:50%;
+    margin-left:-400px;
+    background:url(../images/buildings.png) no-repeat center;
+    z-index: 10;
+    -webkit-filter: brightness(50%);
+ }
+#sky{
+    background:#fff url(../images/sky.png) repeat-x top left;
+    z-index:1;    
+}
+#sun_yellow{
+    position:absolute;
+    left:45%;
+    top:10%;
+    width:85px;
+    height:85px;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 20px orange;
+    z-index:1;
+}
+#sun_red{
+    position:absolute;
+    left:45%;
+    top:10%;
+    width:85px;
+    height:85px;
+    background: orangered;
+    border-radius: 50%;
+    box-shadow: 0 0 20px gold;
+    z-index:1;
+}
+#night{
+    background-color:#000;
+    z-index:4;
+    opacity:0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+#stars{
+    bottom:0px;
+    background:#000 url(../images/stars.png) repeat top center;
+    z-index:4;
+    opacity:0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+#moon{
+    position:absolute;
+    left:45%;
+    top:90%;
+    width:65px;
+    height:65px;
+    background:transparent url(../images/moon.png) no-repeat center center;
+    z-index:6;
+    opacity:0.8;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+}
+#spl_z {
+    z-index: 100;
+    position:absolute;
+    top: 22%;
+    left: 2%;
+}

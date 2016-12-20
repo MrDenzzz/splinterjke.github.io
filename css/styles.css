@@ -37,6 +37,7 @@ html, body {
 }
 .mdl-demo .mdl-layout__tab-bar-container {
   height: 64px;
+    z-index: 20;
 }
 .mdl-demo .mdl-layout__tab-bar {
   padding: 0;
@@ -387,7 +388,7 @@ html, body {
 
 .spl_z {
     top: 45px;
-    left: 20px;
+    left: 20px;    
 }
 
 .mdl-color--primary-dark {

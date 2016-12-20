@@ -39,12 +39,21 @@
       <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
         <div class="mdl-layout__header-row">
             <div class="scene">
-            <div class="spl_z"><h3>GovnoZhopa</h3></div>
-  <div data-offset="45" class="clouds parallax"></div>
-  <div data-offset="15" class="trees parallax"></div>
-  <div data-offset="10" class="grass parallax"></div>
-  <div data-offset="25" class="buildings parallax"></div>  
-</div>
+                <div id="spl_z" data-offset="30" class="parallax"><h3>GovnoZhopa</h3></div>
+                <div id="sky"></div>
+                <div id="sun_yellow"></div>
+                <div id="sun_red"></div>
+                <div id="clouds"></div>
+                <div id="ground" data-offset="10" class="ground parallax"></div>
+                <div id="groundd" data-offset="10" class="ground parallax"></div>
+                <div id="trees" data-offset="15" class="trees parallax"></div>
+                <div id="treess" data-offset="15" class="trees parallax"></div>
+                <div id="buildings" data-offset="25" class="buildings parallax"></div>
+                <div id="buildingss" data-offset="25" class="buildings parallax"></div>
+                <div id="night"></div>
+                <div id="stars"></div>                
+                <div id="moon"></div>                               
+            </div>
         </div> 
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
           <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
@@ -221,8 +230,10 @@
     </footer>
       </main>
     </div> 
-    <script class="cssdeck" src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/material.js"></script>
-    <script src="js/animation.js"></script>    
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.color.js"></script>
+    <script type="text/javascript" src="js/material.js"></script>
+    <script type="text/javascript" src="js/animation.js"></script>    
+    <script type="text/javascript" src="js/sceneryAnimation.js"></script>
   </body>
 </html>
