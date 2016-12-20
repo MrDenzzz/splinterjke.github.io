@@ -92,22 +92,22 @@
     position:absolute;
     left:45%;
     top:10%;
-    width:85px;
-    height:85px;
+    width:75px;
+    height:75px;
     background: yellow;
     border-radius: 50%;
-    box-shadow: 0 0 20px orange;
+    box-shadow: 0 0 40px gold;
     z-index:1;
 }
 #sun_red{
     position:absolute;
     left:45%;
     top:10%;
-    width:85px;
-    height:85px;
+    width:75px;
+    height:75px;
     background: orangered;
     border-radius: 50%;
-    box-shadow: 0 0 20px gold;
+    box-shadow: 0 0 40px gold;
     z-index:1;
 }
 #night{

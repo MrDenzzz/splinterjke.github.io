@@ -12,22 +12,22 @@ switch(true)
             $('#buildings').css({'opacity':'0.5'});
             $('#sky').css({'opacity':'1'});
             $('#night').css({'opacity':'0.4'});
-            $('#sun_red').css({'top':'65%','opacity':'0.8'});
-            $('#sun_yellow').css({'top':'65%','opacity':'0.2'});
+            $('#sun_red').css({'top':'65%','opacity':'0.7'});
+            $('#sun_yellow').css({'top':'65%','opacity':'0.3'});
               //animation
-            $('#sun_yellow').animate({'top':'100%','opacity':'0'},10000,function()
+            $('#sun_yellow').animate({'top':'100%','opacity':'0'},5000,function()
             {
-                $('#stars').animate({'opacity':0.75},4000,function()
+                $('#stars').animate({'opacity':0.75},2000,function()
                 {
-                    $('#moon').animate({'top':'0%','opacity':1}, 4000);
+                    $('#moon').animate({'top':'5%','opacity':1}, 6000);
                 });
             });
-            $('#sun_red').animate({'top':'100%','opacity':'0.8'},10000);
-            $('#clouds').animate({'backgroundPosition':'1000px','opacity':0}, 14000);
-            $('#buildings').animate({'opacity':'0'},18000);
-            $('#night').animate({'opacity':0.8},18000);
-            $('#trees').animate({'opacity':0},18000);
-            $('#ground').animate({'opacity':0},18000);
+            $('#sun_red').animate({'top':'100%','opacity':'0.8'},13000);
+            $('#clouds').animate({'backgroundPosition':'200px','opacity':0}, 13000);
+            $('#buildings').animate({'opacity':'0'},13000);
+            $('#night').animate({'opacity':0.8},13000);
+            $('#trees').animate({'opacity':0},13000);
+            $('#ground').animate({'opacity':0},13000);
           })
         }
         break;
@@ -46,22 +46,21 @@ switch(true)
             $('#sun_red').css({'top':'100%','opacity':'0.8'});
             $('#sun_yellow').css({'top':'100%','opacity':'0.8'});
               //animation
-            $('#moon').animate({'top':'100%','opacity':'0.8'},10000,function()
+            $('#moon').animate({'top':'100%','opacity':'0.8'},5000,function()
             {
-                $('#stars').animate({'opacity':0},4000,function()
+                $('#stars').animate({'opacity':0},2000,function()
                 {
                     $('#sun_yellow').animate({'top':'50%','opacity':1}, 4000);
                 });
             });
-            $('#clouds').animate({'opacity':0.8}, 8000,function()
+            $('#clouds').animate({'opacity':0.8}, 7000,function()
                 {
-                    $('#clouds').animate({'backgroundPosition':'10000px'}, 100000);
-                });
-            $('#clouds').animate({'backgroundPosition':'10000px'}, 100000);            
-            $('#buildings').animate({'opacity':'0.8'},18000);
-            $('#night').animate({'opacity':0.2},18000);
-            $('#trees').animate({'opacity':0.8},18000);
-            $('#ground').animate({'opacity':0.8},18000);
+                    $('#clouds').animate({'backgroundPosition':'200px'}, 40000);
+                });             
+            $('#buildings').animate({'opacity':'0.8'},13000);
+            $('#night').animate({'opacity':0.2},13000);
+            $('#trees').animate({'opacity':0.8},3000);
+            $('#ground').animate({'opacity':0.8},13000);
           })
         }
         break;
@@ -71,7 +70,7 @@ switch(true)
           {
               //css
             $('#ground').css({'opacity':'0.8'});
-            $('#clouds').css({'opacity':'0.8'});
+            $('#clouds').css({'opacity':'0.9'});
             $('#trees').css({'opacity':'0.8'});
             $('#buildings').css({'opacity':'0.8'});            
             $('#night').css({'opacity':'0.2'});
@@ -79,12 +78,12 @@ switch(true)
             $('#sun_red').css({'top':'100%','opacity':'0'});
             $('#sun_yellow').css({'top':'50%','opacity':'1'});
               //animation
-            $('#sun_yellow').animate({'top':'0%','opacity':'1'},10000);
-            $('#clouds').animate({'backgroundPosition':'10000px','opacity':1}, 100000);            
-            $('#buildings').animate({'opacity':'1'},18000);
-            $('#night').animate({'opacity':0},18000);
-            $('#trees').animate({'opacity':1},18000);
-            $('#ground').animate({'opacity':1},18000);
+            $('#sun_yellow').animate({'top':'5%','opacity':'1'},5000);
+            $('#clouds').animate({'backgroundPosition':'200px','opacity':1}, 40000);            
+            $('#buildings').animate({'opacity':'1'},5000);
+            $('#night').animate({'opacity':0},5000);
+            $('#trees').animate({'opacity':1},5000);
+            $('#ground').animate({'opacity':1},5000);
           })
         }
         break;
@@ -99,16 +98,16 @@ switch(true)
             $('#buildings').css({'opacity':'1'});            
             $('#night').css({'opacity':'0'});
             $('#stars').css({'opacity':'0'});            
-            $('#sun_red').css({'top':'0%','opacity':'0'});
-            $('#sun_yellow').css({'top':'0%','opacity':'1'});
+            $('#sun_red').css({'top':'5%','opacity':'0'});
+            $('#sun_yellow').css({'top':'5%','opacity':'1'});
               //animation
-            $('#sun_yellow').animate({'top':'65%','opacity':'0.2'},10000);            
-            $('#sun_red').animate({'top':'65%','opacity':'0.8'},10000);
-            $('#clouds').animate({'backgroundPosition':'10000px','opacity':0.4}, 100000);            
-            $('#buildings').animate({'opacity':'0.5'},18000);
-            $('#night').animate({'opacity':0.4},18000);
-            $('#trees').animate({'opacity':0.5},18000);
-            $('#ground').animate({'opacity':0.5},18000);
+            $('#sun_yellow').animate({'top':'65%','opacity':'0.3'},13000);            
+            $('#sun_red').animate({'top':'65%','opacity':'0.7'},13000);
+            $('#clouds').animate({'backgroundPosition':'200px','opacity':0.4}, 40000);            
+            $('#buildings').animate({'opacity':'0.5'},13000);
+            $('#night').animate({'opacity':0.4},13000);
+            $('#trees').animate({'opacity':0.5},13000);
+            $('#ground').animate({'opacity':0.5},13000);
           })
         }
 }
